@@ -1,0 +1,195 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+.label-color {
+    color: #ffffff;
+}
+
+.form-group-login {
+    margin-top: 7px;
+}
+
+/*the fancy list on the front page*/
+
+#div-fancy-list {
+    margin: 5px;
+}
+
+#ul-fancy-list {
+    list-style-type: none;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+#h1-fancy-list {
+    margin-top: -2px;
+    font: bold 24px/1.5 Helvetica, Arial, sans-serif;
+}
+
+#h3-fancy-list {
+    margin-top: -2px;
+    font: bold 16px/1.5 Helvetica, Arial, sans-serif;
+}
+
+#img-fancy-list {
+    float: left;
+    margin: 0 0px 0 0;
+}
+
+#p-fancy-list {
+    margin-top: -2px;
+    font: 200 12px/1.5 Helvetica, Arial, sans-serif;
+}
+
+#li-fancy-list {
+    padding-left: 0px;
+    overflow: auto;
+}
+
+li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+
+/*Custom header*/
+
+#h2-custom-Header {
+    margin-top: -1px;
+}
+
+
+/*Button on the frontpage images - UNUSED ATM*/
+.imagewrap {
+    display: block;
+    position: relative;
+}
+
+.front-button-top {
+    position: absolute;
+    bottom: 110px;
+    width: 325px;
+    left: 20px;
+}
+
+.front-button-bottom {
+    position: absolute;
+    bottom: 45px;
+    width: 325px;
+    left: 20px;
+}
+
+.btn-on-image {
+    display: inline-block;
+    padding: 15px 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.form-control-own {
+    display: block;
+    width: 100%;
+    height: 500px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+
+
+
+
+
+
+
+/*Button on the frontpage images - UNUSED ATM*/
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+    .img-overlay:before {
+        content: 'hahdhahsdhadshasd';
+        display: block;
+        /* adjust 'height' to position overlay content vertically */
+        height: 75%;
+    }
+/*UNUSED ATM*/
+
+
+

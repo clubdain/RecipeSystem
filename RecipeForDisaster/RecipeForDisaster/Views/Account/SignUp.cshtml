@@ -1,0 +1,107 @@
+﻿@using System.Web.UI.WebControls
+
+
+@{
+    ViewBag.Title = "Homework Helper";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+
+            <ul class="breadcrumb">
+                <li>
+                    <a href="../">Home</a> <span class="divider"></span>
+                </li>
+
+                <li class="active">
+                    Sign up
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-md-5">
+                    <dl>
+                        <dd>
+                            <img src="https://bbamiw-dm2305.files.1drv.com/y4mdc5_MwbaQ0cSRt-Vp45hh2EEPNLKGpWDwQE5syv1ZmE5PHSmVdC4o-Ue84YG2qFUXtboQxwpx4JQeHL3wVvjykzq_Es6B0Rzn5bzieb2y8pIoXZ4cbSIXqN01w-HXVnWpVhTMyNjR6wflz7OXidFBdjVAheLyCAkIxiPkxsZMM7yz2zVDFtv47sT7WiLgPmkfl8cIuVH9_1gVLZ1gPD7Fw?width=1280&height=1092&cropmode=none" width="320" height="273"/>
+                        </dd>
+                        <dt>
+                            <h1>What is Recipe For Disaster all about?</h1>
+                        </dt>
+                        <dd>
+                            This website contains recipes made by our users mean YOU. These can be rated by other users which then will influence how the recipe is presented on the website.
+                            Recipes that are highly rated will be shown as top results on the front page. The front page also includes the newes posted resicpes
+                            Recipes are categorized by Appetizers, Dinner and Dessert. Further, options to choose the countr of orign can be found under each main category
+
+                        </dd>
+                        <h2>Registering and the benefits </h2>
+
+                        <dd>
+                            As a registered user you have the ability to create, rate and comment on the recipes found on our website.
+                        </dd>
+                        <dt>
+                            **Future prospects***
+                        </dt>
+                        <dd>
+                            Furthermore, you will have the ability to add recipes add favorits, generate PDFs containing the recipes.
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-4">
+                    <form method="post">
+                        @*<div class="form-group">
+                            <h2>Sign up</h2>
+                            <label for="fullNameSignup">
+                                Full name
+                            </label>
+                            <input type="text" class="form-control" id="fullNameSignup" placeholder="Full name" name="fullNameSignup" data-val="true" data-val-required="The Fullname field is required." />
+                        </div>*@
+                        <div class="form-group">
+
+                            <label for="usernameSignup">
+                                Username
+                            </label>
+                            <input type="text" class="form-control" id="usernameSignup" placeholder="Username" name="usernameSignup" data-val="true" data-val-required="The Username field is required." />
+                        </div>
+                        <div class="form-group">
+
+                            <label for="passwordSignup">
+                                Password
+                            </label>
+                            <input type="text" class="form-control" id="passwordSignup" placeholder="Password" name="passwordSignup" data-val="true" data-val-required="The Password field is required." />
+                        </div>
+                        <div class="form-group">
+
+                            <label for="repeatPasswordSignup">
+                                Repeat password
+                            </label>
+                            <input type="text" class="form-control" id="repeatPasswordSignup" placeholder="Repeat password" name="repeatPasswordSignup" data-val="true" data-val-required="The repeat password field is required." />
+                        </div>
+                        <div class="form-group">
+
+                            <label for="emailSignup">
+                                Email
+                            </label>
+                            <input type="text" class="form-control" id="emailSignup" placeholder="Email" name="emailSignup"
+                                   data-val="true" data-val-required="The Email field is required." />
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="termsofservice" />  <a href="../About/TermsOfService">I agree to terms of service »</a>
+                            </label>
+                        </div>
+                        <button class="btn btn-success" formaction='@Url.Action("CreateAccount", "Account")'>
+                            Create User
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

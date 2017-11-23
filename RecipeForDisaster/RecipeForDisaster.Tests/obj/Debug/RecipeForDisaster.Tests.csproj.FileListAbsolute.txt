@@ -1,0 +1,2 @@
+D:\Files\Dropbox\Dokumenter\UNI\7. Semester\Web Engineering\RecipeForDisaster\RecipeForDisaster.Tests\obj\Debug\RecipeForDisaster.Tests.csprojResolveAssemblyReference.cache
+D:\Files\Dropbox\Dokumenter\UNI\7. Semester\Web Engineering\RecipeForDisaster\RecipeForDisaster.Tests\obj\Debug\RecipeForDisaster.Tests.csproj.CoreCompileInputs.cache

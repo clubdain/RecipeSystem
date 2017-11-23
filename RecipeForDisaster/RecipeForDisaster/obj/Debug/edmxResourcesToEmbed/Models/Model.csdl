@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="recipe">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rating" Type="Double" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="recipeType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK__recipe__uid__29572725" FromRole="recipe" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="recipe" Relationship="Self.FK__recipe__uid__29572725" FromRole="user" ToRole="recipe" />
+  </EntityType>
+  <Association Name="FK__recipe__uid__29572725">
+    <End Role="user" Type="Self.user" Multiplicity="1" />
+    <End Role="recipe" Type="Self.recipe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="uid" />
+      </Principal>
+      <Dependent Role="recipe">
+        <PropertyRef Name="uid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="recipe" EntityType="Self.recipe" />
+    <EntitySet Name="user" EntityType="Self.user" />
+    <AssociationSet Name="FK__recipe__uid__29572725" Association="Self.FK__recipe__uid__29572725">
+      <End Role="user" EntitySet="user" />
+      <End Role="recipe" EntitySet="recipe" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

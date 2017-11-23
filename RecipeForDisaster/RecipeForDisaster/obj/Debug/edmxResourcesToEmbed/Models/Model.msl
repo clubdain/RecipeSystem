@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="recipe">
+      <EntityTypeMapping TypeName="DatabaseModel.recipe">
+        <MappingFragment StoreEntitySet="recipe">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="recipeType" ColumnName="recipeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="DatabaseModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

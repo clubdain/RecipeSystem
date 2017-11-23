@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "FrontPage";
+
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="../Recipe/CreateARecipe" button type="submit" class="btn btn-success">Create a Recipe</a>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="../">Home</a> <span class="divider"></span>
+                </li>
+            </ul>
+
+            @* <img src="https://bbagiw-dm2305.files.1drv.com/y4mwrnfEbKU-hvlTzvFDzIOTAPt8pBdx-g6TIibTvYBkVzP92GwdESIlv9mLcfXWFNIVPRUtHuWuzP3vtwYcV9p9AJ7yr5pNHezM3VHRq0s7BlYVkkrqIwbqCoy8NALrA737xx_vxqvSjnO_XcItOjLf5N1LJlm8LCPb1GpmUCrONYyFwrWNEsR7cG2XxQECVKrdI1iVGsgvRyeyt-kxAOqWQ?width=437&height=660&cropmode=none" width="455" height="660" /> *@
+            @* <img src="" width="460" height="359" /> />*@
+            <div class="col-md-4">
+                <h3>Appetizers</h3>
+                <a href="../Recipe/Appetizers">
+                    <img border="0" src="https://bbaliw-dm2305.files.1drv.com/y4mnXa_Uy556vL7tLK5zf_BzYwoKHykJ2vWa8HNEV_63cokAOLCvZjkngK2w6C1pXuEVnJzPDbGW6pIcckkduKtV77s-Cagym5rD1_RsLLFwe7leovuqC2SW4xwXs2lf9haUgPzpW-o7ZKxLNhw_AxpI6yHnxTVJERxbNBRjVj3YIzyAZtUvQm_hL556Em-ZVdLI8vDLH4XAe0BwFmfQPnhMw?width=460&height=427&cropmode=none" width="450" height="427" alt="Appetizers picture not found">
+                    @*<div class="imagewrap">
+                        <button class="btn-on-image btn-success front-button-top">Make a question</button>
+
+                        <button class="btn-on-image btn-success front-button-bottom">Browse the Q&A subpage</button>
+                    </div>*@
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Main Dishes</h3>
+                <a href="../Recipe/MainDishes">
+                    <img border="0" src="https://bbaiiw-dm2305.files.1drv.com/y4m2NxdXvN9OtKuwR_JyE4JMi953pkM1FM2tq7QXoUtkhckXyjjXjd4wUqvlPjcCu6baKWbnH9tw9QWKJUwALAxGam9kdzG8JuHbdbiCf3FkAlQH6CgSHqoPrqabGHPH0xokD4ZImDLPLna6XjR4-H6-5G1wAgkQFOqUMieQQD9-2s0n0dkcGPFgQcA05tCwyEFDDi3rYk-e9Hn1dV9fRLyVw?width=460&height=359&cropmode=none" width="450" height="427" alt="Dinner picture not found">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h3>Desserts</h3>
+                <a href="../Recipe/Desserts">
+                    <img border="0" src="https://bbajiw-dm2305.files.1drv.com/y4mMNllPm0Krh55I2eM39bgCxO7ZrPE5DJkjPMh5msa7c6RqdIkjCU4X890jBwhncT68jSifZfi68GALyuQEFTO5n32grqLiYsTOgSMovqP4L4W8dA3ynI1eRgCVttPgnD6zuv4vktXSHOmglro0Nho_QfZeMpz0S221hz0cnn36eacTQnabWAQiJIUJaUot7GSJqk0F35QGZzbPyDEqn1VqA?width=514&height=426&cropmode=none" width="450" height="427" alt="Desser picture not found">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-4">
+                @* list style found on - https://codepen.io/secondfret/pen/tgBCI *@
+                <div id="div-fancy-list">
+                    <ul id="ul-fancy-list">
+                        <h2 id="h2-custom-Header">Popular Recipes</h2>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/1" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/2" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/3" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="div-fancy-list">
+                    <ul id="ul-fancy-list">
+                        <h2 id="h2-custom-Header">Newly add recipes</h2>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/1" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/2" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/3" >*@
+                            <h3 id="h3-fancy-list">Header of recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="div-fancy-list">
+                    <ul id="ul-fancy-list">
+                        <h2 id="h2-custom-Header">Editor's choice</h2>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/1" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/2" >*@
+                            <h3 id="h3-fancy-list">Recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+
+                        <li id="li-fancy-list">
+                            @*<img id="img-fancy-list" src="http://lorempixum.com/100/100/nature/3" >*@
+                            <h3 id="h3-fancy-list">Header of recipe name</h3>
+                            <p id="p-fancy-list">Short summary</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
